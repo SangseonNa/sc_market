@@ -55,15 +55,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		}
 
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
 	@Override
 	/*
 	 * 아래 메뉴 나중에 정할것.
