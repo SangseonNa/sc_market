@@ -11,7 +11,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         startActivity(new Intent(this, splash.class)); //스플래시 class 먼저
-        setContentView(R.layout.activity_main); //핸들러에 의해 종료 된후 activity 시작 
+        setContentView(R.layout.menu); //핸들러에 의해 종료 된후 activity 시작 
+        
+        
     }
 
     @Override
