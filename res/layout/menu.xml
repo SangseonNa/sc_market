@@ -23,9 +23,9 @@
         <ImageView
             android:id="@+id/Menu_Top_what"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="0"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/db_settings" />
 
         <ImageView
             android:id="@+id/Main_Top_logo"
@@ -37,9 +37,9 @@
         <ImageView
             android:id="@+id/Menu_Top_favorite"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="0"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/bookmarks" />
     </LinearLayout>
 
     <RelativeLayout
