@@ -45,47 +45,51 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+<ImageButton
+    android:id="@+id/Menu_btn_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="43dp"
+    android:layout_marginTop="52dp"
+    android:src="@drawable/ic_launcher" 
+    android:onClick="click"
+    />
+<ImageButton
+    android:id="@+id/Menu_btn_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/Menu_btn_1"
+    android:layout_marginRight="35dp"
+    android:layout_marginTop="35dp"
+    android:onClick="click"
+    android:src="@drawable/ic_launcher" />
 
-        <ImageButton
-            android:id="@+id/Menu_btn_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Menu_btn_2"
-            android:layout_below="@+id/Menu_btn_3"
-            android:onClick="mOnClick"
-            android:src="@drawable/ic_launcher" />
+<ImageButton
+    android:id="@+id/Menu_btn_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/Menu_btn_1"
+    android:layout_below="@+id/Menu_btn_2"
+    android:layout_marginTop="35dp"
+    android:src="@drawable/ic_launcher" 
+    android:onClick="click"
+    />
 
-        <ImageButton
-            android:id="@+id/Menu_btn_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/Menu_btn_1"
-            android:layout_marginRight="48dp"
-            android:layout_marginTop="24dp"
-            android:onClick="mOnClick"
-            android:src="@drawable/ic_launcher" />
+<ImageButton
+    android:id="@+id/Menu_btn_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/Menu_btn_2"
+    android:layout_below="@+id/Menu_btn_3"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/ic_launcher" 
+    android:onClick="click"
+    />
 
-        <ImageButton
-            android:id="@+id/Menu_btn_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/Menu_btn_1"
-            android:layout_below="@+id/Menu_btn_2"
-            android:layout_marginTop="74dp"
-            android:onClick="mOnClick"
-            android:src="@drawable/ic_launcher" />
 
-        <ImageButton
-            android:id="@+id/Menu_btn_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="42dp"
-            android:layout_marginTop="71dp"
-            android:onClick="mOnClick"
-            android:src="@drawable/ic_launcher" />
 
     </RelativeLayout>
     

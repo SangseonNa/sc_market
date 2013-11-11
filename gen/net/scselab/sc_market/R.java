@@ -32,10 +32,10 @@ public final class R {
         public static final int Main_Top_logo=0x7f090001;
         public static final int Menu_Top_favorite=0x7f090002;
         public static final int Menu_Top_what=0x7f090000;
-        public static final int Menu_btn_1=0x7f090006;
+        public static final int Menu_btn_1=0x7f090003;
         public static final int Menu_btn_2=0x7f090004;
-        public static final int Menu_btn_3=0x7f090003;
-        public static final int Menu_btn_4=0x7f090005;
+        public static final int Menu_btn_3=0x7f090005;
+        public static final int Menu_btn_4=0x7f090006;
         public static final int action_settings=0x7f090007;
     }
     public static final class layout {
