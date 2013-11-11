@@ -33,18 +33,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.Menu_btn_1:
+			//1번 토스트 테스트
 			Toast toast1 = Toast.makeText(this, "1", Toast.LENGTH_SHORT);
 			toast1.show();
 			break;
 		case R.id.Menu_btn_2:
+			//2번 토스트 테스트
 			Toast toast2 = Toast.makeText(this, "2", Toast.LENGTH_SHORT);
 			toast2.show();
 			break;
 		case R.id.Menu_btn_3:
+			//3번 토스트 테스트
 			Toast toast3 = Toast.makeText(this, "3", Toast.LENGTH_SHORT);
 			toast3.show();
 			break;
 		case R.id.Menu_btn_4:
+			//4번 토스트 테스트
 			Toast toast4 = Toast.makeText(this, "4", Toast.LENGTH_SHORT);
 			toast4.show();
 			break;
