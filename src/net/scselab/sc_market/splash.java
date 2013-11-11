@@ -15,6 +15,6 @@ public class splash extends Activity {
 				finish();
 			}
 		};
-		handle.sendEmptyMessageDelayed(0, 3000); // 시간 설정 부분 3000 = 3초
+		handle.sendEmptyMessageDelayed(0, 1000); // 시간 설정 부분 3000 = 3초
 	}
 }
