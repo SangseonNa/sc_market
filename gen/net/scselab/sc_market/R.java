@@ -31,13 +31,14 @@ public final class R {
         public static final int db_settings=0x7f020001;
         public static final int header_bg=0x7f020002;
         public static final int ic_launcher=0x7f020003;
-        public static final int menu_1=0x7f020004;
-        public static final int menu_2=0x7f020005;
-        public static final int menu_3=0x7f020006;
-        public static final int menu_4=0x7f020007;
-        public static final int menu_logo=0x7f020008;
-        public static final int sc_splash=0x7f020009;
-        public static final int selector=0x7f02000a;
+        public static final int main_bg=0x7f020004;
+        public static final int menu_1=0x7f020005;
+        public static final int menu_2=0x7f020006;
+        public static final int menu_3=0x7f020007;
+        public static final int menu_4=0x7f020008;
+        public static final int menu_logo=0x7f020009;
+        public static final int sc_splash=0x7f02000a;
+        public static final int selector=0x7f02000b;
     }
     public static final class id {
         public static final int Main_Top_logo=0x7f090001;
@@ -50,8 +51,9 @@ public final class R {
         public static final int action_settings=0x7f090007;
     }
     public static final class layout {
-        public static final int menu=0x7f030000;
-        public static final int splash=0x7f030001;
+        public static final int intro=0x7f030000;
+        public static final int menu=0x7f030001;
+        public static final int splash=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;

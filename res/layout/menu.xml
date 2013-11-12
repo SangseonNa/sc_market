@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity" 
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
         <ImageButton
             android:id="@+id/Menu_Top_what"
             android:layout_width="50dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_weight="0"
             android:background="@drawable/selector"
             android:src="@drawable/db_settings" />
@@ -32,14 +33,14 @@
         <ImageView
             android:id="@+id/Main_Top_logo"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:src="@drawable/menu_logo" />
 
         <ImageButton
             android:id="@+id/Menu_Top_favorite"
             android:layout_width="50dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical|center_horizontal"
             android:background="@drawable/selector"
             android:src="@drawable/bookmarks" />
@@ -60,7 +61,12 @@
             android:textColor="#ffffff"
             android:textSize="14dip" />
     </LinearLayout>
-
+<LinearLayout 
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/main_bg"  
+    >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -142,5 +148,5 @@
             android:src="@drawable/menu_4" />
 
     </RelativeLayout>
-
+</LinearLayout>
 </LinearLayout>
