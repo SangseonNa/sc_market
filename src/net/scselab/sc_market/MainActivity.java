@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -15,10 +16,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		startActivity(new Intent(this, splash.class)); // 스플래시 class 먼저
 		setContentView(R.layout.menu); // 핸들러에 의해 종료 된후 activity 시작
-		ImageButton MenuBtn1 = (ImageButton) findViewById(R.id.Menu_btn_1);
-		ImageButton MenuBtn2 = (ImageButton) findViewById(R.id.Menu_btn_2);
-		ImageButton MenuBtn3 = (ImageButton) findViewById(R.id.Menu_btn_3);
-		ImageButton MenuBtn4 = (ImageButton) findViewById(R.id.Menu_btn_4);
+		ImageView MenuBtn1 = (ImageView) findViewById(R.id.Menu_btn_1);
+		ImageView MenuBtn2 = (ImageView) findViewById(R.id.Menu_btn_2);
+		ImageView MenuBtn3 = (ImageView) findViewById(R.id.Menu_btn_3);
+		ImageView MenuBtn4 = (ImageView) findViewById(R.id.Menu_btn_4);
 		MenuBtn1.setOnClickListener(this);
 		MenuBtn2.setOnClickListener(this);
 		MenuBtn3.setOnClickListener(this);
