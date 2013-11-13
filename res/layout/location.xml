@@ -26,12 +26,12 @@
         >
 
         <ImageButton
-            android:id="@+id/Menu_Top_what"
+            android:id="@+id/Menu_Top_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="0"
             android:background="@drawable/selector"
-            android:src="@drawable/db_settings" />
+            android:src="@drawable/home" />
 
         <ImageView
             android:id="@+id/Main_Top_logo"

@@ -16,7 +16,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		startActivity(new Intent(this, splash.class)); // 스플래시 class 먼저
+//		startActivity(new Intent(this, splash.class)); // 스플래시 class 먼저
 		setContentView(R.layout.menu); // 핸들러에 의해 종료 된후 activity 시작
 		ImageView MenuBtn1 = (ImageView) findViewById(R.id.Menu_btn_1);
 		ImageView MenuBtn2 = (ImageView) findViewById(R.id.Menu_btn_2);
@@ -35,7 +35,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			public void onClick(View v) {
 				// 테스트용 토스트
 				
-				Toast toast1 = Toast.makeText(getApplicationContext(), "hello",
+				Toast toast1 = Toast.makeText(getApplicationContext(), "나중에 설정 페이지 할것임",
 						Toast.LENGTH_SHORT);
 				toast1.show();
 			}
@@ -46,7 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			@Override
 			public void onClick(View v) {
 				// 테스트용 토스트
-				Toast toast2 = Toast.makeText(getApplicationContext(), "hello",
+				Toast toast2 = Toast.makeText(getApplicationContext(), "단골 상점 들어갈곳",
 						Toast.LENGTH_SHORT);
 				toast2.show();
 			}

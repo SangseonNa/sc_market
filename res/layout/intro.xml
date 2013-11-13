@@ -23,12 +23,12 @@
         android:paddingTop="@dimen/activity_vertical_margin" >
 
         <ImageButton
-            android:id="@+id/Menu_Top_what"
+            android:id="@+id/Menu_Top_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="0"
             android:background="@drawable/selector"
-            android:src="@drawable/db_settings" />
+            android:src="@drawable/home" />
 
         <ImageView
             android:id="@+id/Main_Top_logo"
@@ -64,45 +64,74 @@
 
 
 
-<LinearLayout 
-    android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:background="@color/contentbar"
-    >
-        
-    <LinearLayout 
-        android:layout_width="match_parent"
-        android:background="@color/titlebar"
-        android:layout_height="30dp"
-        android:orientation="vertical"
-        >
-        <LinearLayout 
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <ImageView 
-                android:layout_height="30dp"
-				android:layout_width="wrap_content"
-                android:layout_gravity="left|center_vertical"
-                android:src="@drawable/check"
-                
-                />
-            <TextView 
-				android:layout_height="30dp"
-                android:text="소개"
-                android:layout_width="match_parent"
-				android:textSize="25dip"            
-                />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFF8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingBottom="10dp"
+                android:src="@drawable/aaa" />
         </LinearLayout>
-        
-        
-        
-        
-        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  아랫장의 소개"
+                android:textColor="#000000"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/up" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" 전라남도 순천시 풍덕동 동천(東川)변에서 열리는 5일장이다. 전국의 5일장 중 최대 규모로, 1일 이용객은 2만여 명이 넘고 부지면적은 약 3만 3,000㎡에 이른다. 순천은 물론 구례·곡성·보성·화순·고흥·광양·여수 등 전남 동부지역과 경남 하동·진주 지역의 상인들과 주민들도 찾아오는 장으로, ‘남부5일장’이라고도 부른다. 장날은 2·7·12·17·22·27일이다.
+순천만 간척지에서 생산되는 청결미를 비롯한 각종 농산물과 순천만과 남해안에서 생산되는 수산물, 각종 공산품과 약초·화초 등이 거래된다. 시장 남쪽 보건소 부근에는 곡물창고와 수산시장 건물 등 대형건물들이 들어서 있으며, 장터 곳곳에서 다양한 종류의 남도음식을 맛볼 수 있다.
+[네이버 지식백과] 순천 아랫장 [順天-] (두산백과)"
+                android:textColor="#000000"
+                android:textSize="15dip" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bottom" />
+        </LinearLayout>
     </LinearLayout>
-    
-    
-</LinearLayout>
+
+</ScrollView>
 </LinearLayout>

@@ -1,5 +1,7 @@
 package net.scselab.sc_market;
+import net.scselab.sc_sub_intro.intro;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -14,6 +16,8 @@ public class splash extends Activity {
 		setContentView(R.layout.splash); // 띄어질 스플래시 xml 설정 부분
 		Handler handle = new Handler() {
 			public void handleMessage(Message msg) {
+				Intent intro = new Intent(splash.this, MainActivity.class);
+				startActivity(intro);
 				finish();
 			}
 		};

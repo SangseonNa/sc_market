@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">sc_market</string>
+    <string name="app_name">순천 시장</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 	<color name="bg">#FFFFFF</color>
+	<string name="str_done">완료</string>
 </resources>
