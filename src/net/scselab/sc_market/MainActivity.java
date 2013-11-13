@@ -1,5 +1,7 @@
 package net.scselab.sc_market;
 
+import net.scselab.sc_sub_intro.intro;
+import net.scselab.sc_sub_location.location;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -57,15 +59,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.Menu_btn_1:
-			// 1번 토스트 테스트
-
-			Toast toast1 = Toast.makeText(this, "1", Toast.LENGTH_SHORT);
-			toast1.show();
+				/*
+				 * 아랫장 소개에 대한 엑티비티 생성과 호출 및 종료
+				 */
+				Intent intro = new Intent(MainActivity.this, intro.class);
+				startActivity(intro);
+				finish();
 			break;
 		case R.id.Menu_btn_2:
-			// 2번 토스트 테스트
-			Toast toast2 = Toast.makeText(this, "2", Toast.LENGTH_SHORT);
-			toast2.show();
+			
+			Intent location = new Intent(MainActivity.this, location.class);
+			startActivity(location);
+			finish();
 			break;
 		case R.id.Menu_btn_3:
 			// 3번 토스트 테스트
