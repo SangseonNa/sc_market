@@ -39,33 +39,40 @@ public final class R {
         public static final int btn_green_pressed=0x7f020007;
         public static final int check=0x7f020008;
         public static final int db_settings=0x7f020009;
-        public static final int header_bg=0x7f02000a;
-        public static final int home=0x7f02000b;
-        public static final int ic_angle=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int ic_map_arrive=0x7f02000e;
-        public static final int ic_map_arrive_over=0x7f02000f;
-        public static final int ic_map_no_01=0x7f020010;
-        public static final int ic_map_no_02=0x7f020011;
-        public static final int ic_map_start=0x7f020012;
-        public static final int ic_map_start_over=0x7f020013;
-        public static final int ic_pin_01=0x7f020014;
-        public static final int ic_pin_02=0x7f020015;
-        public static final int icon=0x7f020016;
-        public static final int main_bg=0x7f020017;
-        public static final int menu_1=0x7f020018;
-        public static final int menu_2=0x7f020019;
-        public static final int menu_3=0x7f02001a;
-        public static final int menu_4=0x7f02001b;
-        public static final int menu_logo=0x7f02001c;
-        public static final int pin_ballon_arrow=0x7f02001d;
-        public static final int pin_ballon_bg=0x7f02001e;
-        public static final int pin_ballon_on_arrow=0x7f02001f;
-        public static final int pubtrans_ic_mylocation_off=0x7f020020;
-        public static final int pubtrans_ic_mylocation_on=0x7f020021;
-        public static final int sc_splash=0x7f020022;
-        public static final int selector=0x7f020023;
-        public static final int up=0x7f020024;
+        public static final int drama=0x7f02000a;
+        public static final int goindol=0x7f02000b;
+        public static final int header_bg=0x7f02000c;
+        public static final int home=0x7f02000d;
+        public static final int ic_angle=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int ic_map_arrive=0x7f020010;
+        public static final int ic_map_arrive_over=0x7f020011;
+        public static final int ic_map_no_01=0x7f020012;
+        public static final int ic_map_no_02=0x7f020013;
+        public static final int ic_map_start=0x7f020014;
+        public static final int ic_map_start_over=0x7f020015;
+        public static final int ic_pin_01=0x7f020016;
+        public static final int ic_pin_02=0x7f020017;
+        public static final int icon=0x7f020018;
+        public static final int line=0x7f020019;
+        public static final int main_bg=0x7f02001a;
+        public static final int man=0x7f02001b;
+        public static final int menu_1=0x7f02001c;
+        public static final int menu_2=0x7f02001d;
+        public static final int menu_3=0x7f02001e;
+        public static final int menu_4=0x7f02001f;
+        public static final int menu_logo=0x7f020020;
+        public static final int nac_ann=0x7f020021;
+        public static final int pin_ballon_arrow=0x7f020022;
+        public static final int pin_ballon_bg=0x7f020023;
+        public static final int pin_ballon_on_arrow=0x7f020024;
+        public static final int pubtrans_ic_mylocation_off=0x7f020025;
+        public static final int pubtrans_ic_mylocation_on=0x7f020026;
+        public static final int sc_splash=0x7f020027;
+        public static final int selector=0x7f020028;
+        public static final int song=0x7f020029;
+        public static final int sun=0x7f02002a;
+        public static final int up=0x7f02002b;
     }
     public static final class id {
         public static final int Main_Top_logo=0x7f090001;
@@ -84,10 +91,11 @@ public final class R {
         public static final int top_2=0x7f090006;
     }
     public static final class layout {
-        public static final int intro=0x7f030000;
-        public static final int location=0x7f030001;
-        public static final int menu=0x7f030002;
-        public static final int splash=0x7f030003;
+        public static final int around=0x7f030000;
+        public static final int intro=0x7f030001;
+        public static final int location=0x7f030002;
+        public static final int menu=0x7f030003;
+        public static final int splash=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f080000;

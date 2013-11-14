@@ -1,5 +1,6 @@
 package net.scselab.sc_market;
 
+import net.scselab.sc_sub_around.around;
 import net.scselab.sc_sub_intro.intro;
 import net.scselab.sc_sub_location.location;
 import android.app.Activity;
@@ -16,7 +17,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		startActivity(new Intent(this, splash.class)); // 스플래시 class 먼저
+		// startActivity(new Intent(this, splash.class)); // 스플래시 class 먼저
 		setContentView(R.layout.menu); // 핸들러에 의해 종료 된후 activity 시작
 		ImageView MenuBtn1 = (ImageView) findViewById(R.id.Menu_btn_1);
 		ImageView MenuBtn2 = (ImageView) findViewById(R.id.Menu_btn_2);
@@ -26,7 +27,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		MenuBtn2.setOnClickListener(this);
 		MenuBtn3.setOnClickListener(this);
 		MenuBtn4.setOnClickListener(this);
-		
 
 		final ImageButton MenuBtnwhat = (ImageButton) findViewById(R.id.Menu_Top_what);
 		MenuBtnwhat.setOnClickListener(new OnClickListener() {
@@ -34,9 +34,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			@Override
 			public void onClick(View v) {
 				// 테스트용 토스트
-				
-				Toast toast1 = Toast.makeText(getApplicationContext(), "나중에 설정 페이지 할것임",
-						Toast.LENGTH_SHORT);
+
+				Toast toast1 = Toast.makeText(getApplicationContext(),
+						"나중에 설정 페이지 할것임", Toast.LENGTH_SHORT);
 				toast1.show();
 			}
 		});
@@ -46,8 +46,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			@Override
 			public void onClick(View v) {
 				// 테스트용 토스트
-				Toast toast2 = Toast.makeText(getApplicationContext(), "단골 상점 들어갈곳",
-						Toast.LENGTH_SHORT);
+				Toast toast2 = Toast.makeText(getApplicationContext(),
+						"단골 상점 들어갈곳", Toast.LENGTH_SHORT);
 				toast2.show();
 			}
 		});
@@ -59,15 +59,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.Menu_btn_1:
-				/*
-				 * 아랫장 소개에 대한 엑티비티 생성과 호출 및 종료
-				 */
-				Intent intro = new Intent(MainActivity.this, intro.class);
-				startActivity(intro);
-				finish();
+			/*
+			 * 아랫장 소개에 대한 엑티비티 생성과 호출 및 종료
+			 */
+			Intent intro = new Intent(MainActivity.this, intro.class);
+			startActivity(intro);
+			finish();
 			break;
 		case R.id.Menu_btn_2:
-			
+
 			Intent location = new Intent(MainActivity.this, location.class);
 			startActivity(location);
 			finish();
@@ -79,8 +79,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			break;
 		case R.id.Menu_btn_4:
 			// 4번 토스트 테스트
-			Toast toast4 = Toast.makeText(this, "4", Toast.LENGTH_SHORT);
-			toast4.show();
+			Intent around = new Intent(MainActivity.this, around.class);
+			startActivity(around);
+			finish();
 			break;
 		}
 

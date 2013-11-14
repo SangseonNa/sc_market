@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 
 public class intro extends Activity{
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.intro);

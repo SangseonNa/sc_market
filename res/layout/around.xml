@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/top_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <ImageButton
+            android:id="@+id/Menu_Top_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/selector"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/Main_Top_logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/menu_logo" />
+
+        <ImageButton
+            android:id="@+id/Menu_Top_favorite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/selector"
+            android:src="@drawable/bookmarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@color/top_under_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="주변 관광지"
+            android:textColor="#ffffff"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFF8"
+        android:orientation="vertical" 
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:text="낙안읍성민속마을"
+                android:textColor="#F29661"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/nac_ann" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삼한시대 마한땅, 백제때 파지성, 고려때 낙안군 고을터며, 조선시대 성과 동헌(東軒), 객사(客舍), 임경업군수비, 장터, 초가가 원형대로 보존되어 성과 마을이 함께 국내 최초로 사적 제302호에 지정되었다.
+
+조선태조6년(1397) 왜구가 침입하자 이 고장 출신 양혜공 김빈길 장군이 의병을 일으켜 토성을 쌓아 방어에 나섰고300년후 인조4년 (1626) 충민공 임경업 장군이 33세때 낙안군수로 부임하여 현재의 석성으로 중수했다."
+                android:textColor="#000000"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:text="순천만"
+                android:textColor="#F29661"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/man" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="순천만은 우리나라 남해안 중서부에 위치한 만으로서, 행정구역상 전라남도 순천시와 고흥군, 여수시로 둘러싸여 있다. 간조기에 드러나는 갯벌의 면적만 해도 총면적이 12㎢에 달하며, 갯벌의 전체 면적은 21.6㎢나 된다. 또한 순천의 동천과 이사천의 합류 지점으로부터 순천만의 갯벌 앞부분까지에는 총면적 5.4㎢에 달하는 거대한 갈대 군락이 펼쳐져 있다.
+
+자그마치 5000년이나 되는 역사를 가진 순천만은 오염원이 적어 갯벌, 염습지가 잘 발달하여, 질좋은 수산물과 각종 저서무척추동물, 염생식물이 풍부하다. 또한 넓게 펼쳐진 갈대군락은 천연기념물 제228호인 흑두루미를 비롯하여 검은머리갈매기, 황새, 저어새, 노란부리백로 등 국제적 희귀조류 11종과 한국조류 200여종의 월동 및 서식지가 되어주고 있다.
+
+순천만은2006년 1월 20일 연안습지로는 전국 최초로 람사협약에 등록이 되었다."
+                android:textColor="#000000"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:text="선암사"
+                android:textColor="#F29661"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/sun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="순천 선암사는 고려불교의 여러사상이 선과 교의 승풍으로 융합되어 많은 선승을 배출한 태고종 본산으로 이름나 있다.
+지금부터 900년전 대각국사 의천스님이 중국의 천태의 교법을 전수받아 천태종을 개창하였고, 당시 청량산을 조계산이라 개칭했으며 임제선풍의 대쪽같은 승풍을 고고하게 지켜온 청정도장이자 천년고찰로써 우리나라 불교문화연구에 있어 송광사와 쌍벽을 이룬 사찰이다."
+                android:textColor="#000000"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:text="송광사"
+                android:textColor="#F29661"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/song" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="순천 송광사는 송광면 신평리에 있으며, 우리나라의 오랜 불교 역사 속에서 전통승맥을 계승한 승보사찰(僧寶寺刹)로, 합천 해인사(法寶), 양산 통도사(佛寶)와 더불어 삼보사찰(三寶寺刹)로 불리고 있다. 지금부터 800년전 보조국사 지눌이 당시 타락한 불교를 바로잡고 우리 불교의 전통을 새롭게 하기 위해 정혜결사(定慧結社)를 벌였던 도량(道場)이며 지눌, 진각을 비롯한 16국사를 배출한 송광사는 외국 승려가 수도하는 국제 선원으로 한국불교문화를 연구하는 도량(道場)이다."
+                android:textColor="#000000"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:text="드라마 촬영장"
+                android:textColor="#F29661"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/drama" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="드라마촬영장은 60년대에서 80년대까지 시대별로 순천읍내, 서울의 달동네,번화가 등 3개마을 200여채의 건물을 통해 서민들의 애환이 서려있는 생활 환경을 그대로 재현해내어 많은 관광객으로부터 감탄을 자아내게 하고 있다.
+그동안 드라마촬영장과 함께 한 작품은 사랑과 야망, 그해여름, 님은 먼 곳에, 에덴의 동쪽 등이 있다."
+                android:textColor="#000000"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:text="고인돌공원"
+                android:textColor="#F29661"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/goindol" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선사시대 문화 유적인 고인돌군을 비롯 구석기 집터, 신석기 및 청동기 움집 6동과 선돌 등을 주암호수변 17,000평 부지에 야외 전시장, 유물 전시관, 묘제 전시관 등 전국 최초로 조성된 고인돌 공원이며 전라남도 문화재자료 제154호로 지정되어 있다.
+고인돌은 선사시대부터 만들어진 묘의 일종으로 전국 각지에 산재 하나 전남 지역에 가장 많이 분포되어 있어 선사문화를 연구하는데 귀중한 역사자료로 활용되고 있다."
+                android:textColor="#000000"
+                android:textSize="13dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
