@@ -1,0 +1,250 @@
+package net.scselab.sc_sub_location;
+
+import net.daum.mf.map.api.MapPOIItem;
+import net.daum.mf.map.api.MapPoint;
+import net.daum.mf.map.api.MapView;
+import net.scselab.sc_market.MainActivity;
+import net.scselab.sc_market.R;
+import net.scselab.sc_sub_intro.intro;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+
+public class location extends Activity implements
+		MapView.OpenAPIKeyAuthenticationResultListener,
+		MapView.MapViewEventListener, MapView.CurrentLocationEventListener,
+		MapView.POIItemEventListener, LocationListener {
+
+	private MapView mapView; // 맵뷰 생성
+	private String API_KEY = "61d4a27182019f17407c7045f7a36d85b5dc5d7c"; // api
+																			// 인증키
+	MapPOIItem market; // 아랫장 위치 마커 객체 선언
+	String MARKET_NAME = "아랫장";
+	Criteria criteria = null;
+	LocationManager locationManager = null;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.location);
+		// LinearLayout linearLayout = new LinearLayout(this);
+		LinearLayout mapview = (LinearLayout) findViewById(R.id.mapview);
+		mapView = new MapView(this);
+
+		mapView.setDaumMapApiKey(API_KEY);
+		mapView.setOpenAPIKeyAuthenticationResultListener(this);
+		mapView.setMapViewEventListener(this);
+		mapView.setCurrentLocationEventListener(this);
+		mapView.setPOIItemEventListener(this);
+		mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(
+				34.94623653649619, 127.49423234870194), true); // 초기화 설정
+		mapView.setZoomLevel(1, true);
+		mapView.setMapType(MapView.MapType.Standard);
+
+		/*
+		 * 전통시장 마커 표시
+		 */
+		market = new MapPOIItem(); // 실질적 객체 생성
+		market.setItemName(MARKET_NAME);
+		market.setMapPoint(MapPoint.mapPointWithGeoCoord(34.94623653649619,
+				127.49423234870194));
+		market.setMarkerType(MapPOIItem.MarkerType.BluePin);
+		market.setShowAnimationType(MapPOIItem.ShowAnimationType.DropFromHeaven);
+		market.setShowCalloutBalloonOnTouch(true);
+		market.setDraggable(true);
+		market.setTag(1);
+
+		mapView.addPOIItem(market);
+
+		criteria = new Criteria();
+
+		criteria.setAccuracy(Criteria.ACCURACY_FINE);
+
+		criteria.setPowerRequirement(Criteria.POWER_LOW);
+
+		criteria.setAltitudeRequired(true);
+
+		criteria.setBearingRequired(false);
+
+		criteria.setSpeedRequired(false);
+
+		criteria.setCostAllowed(true);
+
+		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+		String provider = locationManager.getBestProvider(criteria, true);
+
+		if (!locationManager.isProviderEnabled(provider)
+
+		&& locationManager.getLastKnownLocation(provider) != null) {
+
+			locationManager.requestLocationUpdates(
+
+			provider,
+
+			1000,
+
+			10, this);
+
+		} else {
+
+			criteria.setAccuracy(Criteria.ACCURACY_COARSE);
+
+			provider = locationManager.getBestProvider(criteria, true);
+
+			locationManager.requestLocationUpdates(
+
+			provider,
+
+			1000,
+
+			10, this);
+
+		}
+
+		mapview.addView(mapView);
+
+		ImageButton home = (ImageButton) findViewById(R.id.Menu_Top_home);
+		home.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intro = new Intent(location.this, MainActivity.class);
+				startActivity(intro);
+				finish();
+			}
+		});
+
+	}
+
+	@Override
+	public void onCalloutBalloonOfPOIItemTouched(MapView arg0, MapPOIItem arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onDraggablePOIItemMoved(MapView arg0, MapPOIItem arg1,
+			MapPoint arg2) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onPOIItemSelected(MapView arg0, MapPOIItem arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onCurrentLocationDeviceHeadingUpdate(MapView mapView,
+			float headingAngle) {
+		Log.i("ERROR",
+				String.format(
+						"MapView onCurrentLocationDeviceHeadingUpdate: device heading = %f degrees",
+						headingAngle));
+	}
+
+	@Override
+	public void onCurrentLocationUpdate(MapView mapView,
+			MapPoint currentLocation, float accuracyInMeters) {
+		MapPoint.GeoCoordinate mapPointGeo = currentLocation
+				.getMapPointGeoCoord();
+		Log.i("ERROR", String.format(
+				"MapView onCurrentLocationUpdate (%f,%f) accuracy (%f)",
+				mapPointGeo.latitude, mapPointGeo.longitude, accuracyInMeters));
+	}
+
+	@Override
+	public void onCurrentLocationUpdateCancelled(MapView arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onCurrentLocationUpdateFailed(MapView arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onMapViewCenterPointMoved(MapView arg0, MapPoint arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onMapViewDoubleTapped(MapView arg0, MapPoint arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onMapViewInitialized(MapView arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onMapViewLongPressed(MapView arg0, MapPoint arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onMapViewSingleTapped(MapView arg0, MapPoint arg1) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void onMapViewZoomLevelChanged(MapView arg0, int arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onDaumMapOpenAPIKeyAuthenticationResult(MapView arg0, int arg1,
+			String arg2) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onLocationChanged(Location location) {
+		/*
+		 * 위치 변경됐을때 다음 api호출 아랫부분 두줄
+		 */
+		mapView.setCurrentLocationEventListener(this);
+		mapView.setCurrentLocationTrackingMode(MapView.CurrentLocationTrackingMode.TrackingModeOnWithHeading);
+		
+	}
+
+	@Override
+	public void onProviderDisabled(String provider) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onProviderEnabled(String provider) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		// TODO Auto-generated method stub
+
+	}
+}
